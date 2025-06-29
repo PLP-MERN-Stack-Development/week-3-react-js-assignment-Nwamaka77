@@ -1,0 +1,42 @@
+/* App.css - Main application styles */
+
+/* App.css - Main application styles */
+
+/* If you are not using Tailwind's build process, import the compiled Tailwind CSS instead: */
+@import 'tailwindcss/base.css';
+@import 'tailwindcss/components.css';
+@import 'tailwindcss/utilities.css';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #f9fafb;
+    color: #111827;
+  }
+  
+  body.dark {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
